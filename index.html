@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+
+	<title>Dynamically Hide Input Text</title> 
+</head> 
+
+<body> 
+	<form> 
+		<label for="user-input">User Input:</label> 
+		<input type="text" id="user-input" name="user-input"> 
+		<button type="button" onclick="toggleVisibility()"> 
+			Toggle Visibility 
+		</button> 
+	</form> 
+
+	<script> 
+		function toggleVisibility() { 
+			const input = document.getElementById('user-input'); 
+			if (input.type === 'text') { 
+				input.type = 'password'; 
+			} else { 
+				input.type = 'text'; 
+			} 
+		} 
+	</script> 
+</body> 
+
+</html>
