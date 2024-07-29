@@ -12,19 +12,19 @@
 <body> 
 	<form> 
 		<label for="user-input">User Input:</label> 
-		<input type="text" id="user-input" name="user-input"> 
+		<input type="Password" id="user-input" name="user-input"> 
 		<button type="button" onclick="toggleVisibility()"> 
-			Toggle Visibility 
+			Show Password 
 		</button> 
 	</form> 
 
 	<script> 
 		function toggleVisibility() { 
 			const input = document.getElementById('user-input'); 
-			if (input.type === 'text') { 
-				input.type = 'password'; 
-			} else { 
+			if (input.type === 'password') { 
 				input.type = 'text'; 
+			} else { 
+				input.type = 'password'; 
 			} 
 		} 
 	</script> 
